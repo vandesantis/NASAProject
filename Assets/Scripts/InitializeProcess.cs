@@ -2,14 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NextButton : MonoBehaviour
+public class InitializeProcess : MonoBehaviour
 {
     public MeshRenderer m_ButtonHighlight;
-    public ProjectController projectController;
 
-    //public GameObject Laptop, screwdriver;
+    public GameObject taskProcess;
 
-    private 
+    private
     // Start is called before the first frame update
     void Start()
     {
@@ -23,9 +22,7 @@ public class NextButton : MonoBehaviour
     public void OnSelect()
     {
         //Debug.Log("OnSelect() called on: " + gameObject.name);
-        //Laptop.SetActive(true);
-        //screwdriver.SetActive(true);
 
-        projectController.NextTask();
+        taskProcess.SetActive(true);
     }
 }
