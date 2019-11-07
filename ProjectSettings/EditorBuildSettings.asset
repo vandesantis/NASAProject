@@ -5,7 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Main.unity
     guid: 8cb46ed000fd4be40a0844bc43b13abc
+  - enabled: 1
+    path: Assets/Scenes/Van's Scenes/Van test 2.unity
+    guid: b5c711b9ce586524e80a50b9e61dc456
   m_configObjects: {}
