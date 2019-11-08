@@ -8,7 +8,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Main.unity
     guid: 8cb46ed000fd4be40a0844bc43b13abc
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Van's Scenes/Van test 2.unity
     guid: b5c711b9ce586524e80a50b9e61dc456
+  - enabled: 1
+    path: Assets/Scenes/Environment.unity
+    guid: 73396cc3f1552ff4886165fe7f6a12ae
   m_configObjects: {}
