@@ -52,7 +52,11 @@ public class ProjectController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("T"))
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            PrevTask();
+        }
+        if (Input.GetKeyDown(KeyCode.T))
         {
             NextTask();
         }
