@@ -10,6 +10,7 @@ public class ProjectController : MonoBehaviour
 
     public Text taskText;
     private string[] taskStrings;
+    private bool prev;
 
 
     public Animator[] aniList = new Animator[5];
@@ -71,7 +72,34 @@ public class ProjectController : MonoBehaviour
         }
         currentTaskNum++;
 
-        aniList[currentTaskNum].enabled = true;
+        //aniList[currentTaskNum].enabled = true;
+        for(int i = 0; i < 5; i++)
+        {
+            if (aniList[i] == null)
+            {
+                continue;
+            }
+            if (i == currentTaskNum)
+            {
+                aniList[i].enabled = true;
+            }
+            else
+            {
+                if(i == (currentTaskNum - 1))
+                {
+                    aniList[i].Play("Battery", -1, 1.0f);
+                    aniList[i].Play("Screws", -1, 1.0f);
+                    aniList[i].Play("BackPanel", -1, 1.0f);
+                    Debug.Log("Skipping Animation");
+                    Debug.Log(i);
+                }
+                //aniList[i].enabled = false;
+            }
+        }
+
+        aniList[currentTaskNum].Play("Battery", -1, 0.0f);
+        aniList[currentTaskNum].Play("Screws", -1, 0.0f);
+        aniList[currentTaskNum].Play("BackPanel", -1, 0.0f);
         taskText.text = taskStrings[currentTaskNum];
     }
 
@@ -81,7 +109,29 @@ public class ProjectController : MonoBehaviour
         {
             return;
         }
+        
+        aniList[currentTaskNum].Play("Battery", -1, 0.0f);
+        aniList[currentTaskNum].Play("Screws", -1, 0.0f);
+        aniList[currentTaskNum].Play("BackPanel", -1, 0.0f);
+        prev = true;
+        StartCoroutine(prevTimer());
+        Debug.Log("Disabling");
+        //aniList[currentTaskNum].enabled = false;
         currentTaskNum--;
+        aniList[currentTaskNum].enabled = true;
+        aniList[currentTaskNum].Play("Battery", -1, 0.0f);
+        aniList[currentTaskNum].Play("Screws", -1, 0.0f);
+        aniList[currentTaskNum].Play("BackPanel", -1, 0.0f);
         taskText.text = taskStrings[currentTaskNum];
+        //aniList[currentTaskNum+1].enabled = false;
+    }
+
+    IEnumerator prevTimer()
+    {
+        prev = false;
+        Debug.Log("Waiting");
+        yield return new WaitForSeconds(.001f);
+        aniList[currentTaskNum+1].enabled = false;
+        
     }
 }
