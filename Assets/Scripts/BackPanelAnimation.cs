@@ -21,11 +21,21 @@ public class BackPanelAnimation : MonoBehaviour
             //StartCoroutine(BackPanel());
             Backpanel();
         }
+        if (Input.GetKeyDown(KeyCode.Y))
+        {
+            //StartCoroutine(BackPanel());
+            BackpanelRev();
+        }
     }
 
     private void Backpanel()
     {
         anim.Play("AvatarBackPanelParent");
+    }
+
+    private void BackpanelRev()
+    {
+        anim.Play("AvatarBackPanelParentRev");
     }
 
     //private IEnumerator BackPanel()
