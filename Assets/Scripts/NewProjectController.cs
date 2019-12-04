@@ -58,6 +58,7 @@ public class NewProjectController : MonoBehaviour
                 case 2:
                     break;
                 case 3:
+                    BackpanelRestart();
                     break;
                 case 4:
                     break;
@@ -80,6 +81,11 @@ public class NewProjectController : MonoBehaviour
     private void BackpanelRev()
     {
         anim.Play("AvatarBackPanelParentRev");
+    }
+
+    private void BackpanelRestart()
+    {
+        anim.Play("StartBackPanel");
     }
 
     private void Walk()
