@@ -8,12 +8,12 @@ public class Ram : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        A=GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        a.Play("total");
+        A.Play("total");
     }
 }
