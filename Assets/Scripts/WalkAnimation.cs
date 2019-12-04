@@ -19,23 +19,23 @@ public class WalkAnimation : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.T))
         {
             //StartCoroutine(BackPanel());
-            Backpanel();
+            Walk();
         }
         if (Input.GetKeyDown(KeyCode.Y))
         {
             //StartCoroutine(BackPanel());
-            BackpanelRev();
+            WalkRestart();
         }
     }
 
-    private void Backpanel()
+    private void Walk()
     {
         anim.Play("AvatarWalkParent");
     }
 
-    private void BackpanelRev()
+    private void WalkRestart()
     {
-        anim.Play("AvatarBackPanelParentRev");
+        anim.Play("WalkStart");
     }
 
     //private IEnumerator BackPanel()
