@@ -85,7 +85,7 @@ public class NewProjectController : MonoBehaviour
 
     private void BackpanelRestart()
     {
-        anim.Play("StartBackPanel");
+        anim.Play("StartBackpanel");
     }
 
     private void Walk()
