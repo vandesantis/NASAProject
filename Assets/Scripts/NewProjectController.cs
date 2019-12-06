@@ -27,6 +27,7 @@ public class NewProjectController : MonoBehaviour
                     Walk();
                     break;
                 case 1:
+                    Screws();
                     break;
                 case 2:
                     Backpanel();
@@ -39,6 +40,7 @@ public class NewProjectController : MonoBehaviour
                     BackpanelRev();
                     break;
                 case 6:
+                    ScrewsRev();
                     break;
                 case 7:
                     break;
@@ -96,5 +98,13 @@ public class NewProjectController : MonoBehaviour
     private void WalkRestart()
     {
         anim.Play("WalkStart");
+    }
+    private void Screws()
+    {
+        anim.Play("Screwdriver animation");
+    }
+    private void ScrewsRev()
+    {
+        anim.Play("Screwdriver animation reverse");
     }
 }
