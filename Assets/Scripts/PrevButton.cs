@@ -9,9 +9,8 @@ public class PrevButton : MonoBehaviour
 
     //public GameObject Laptop, screwdriver;
 
-    private
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
     }
 

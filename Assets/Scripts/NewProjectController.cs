@@ -12,8 +12,8 @@ public class NewProjectController : MonoBehaviour
     private string[] taskStrings;
     //private bool prev;
 
-    private Animator anim;
-    private Animator cam;
+    public Animator anim;
+ //   private Animator cam;
 
     // Start is called before the first frame update
     void Start()
@@ -32,8 +32,8 @@ public class NewProjectController : MonoBehaviour
         //taskStrings[10] = "Task 10";
 
 
-        anim = GetComponent<Animator>();
-        cam = GetComponent<Animator>();
+ //       anim = GetComponent<Animator>();
+ //       cam = GetComponent<Animator>();
         currentTaskNum = 0;
         taskText.text = taskStrings[currentTaskNum];
     }

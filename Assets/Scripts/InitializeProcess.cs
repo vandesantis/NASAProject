@@ -8,10 +8,17 @@ public class InitializeProcess : MonoBehaviour
 
     public GameObject taskProcess;
 
-    private
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.U))
+        {
+            taskProcess.SetActive(true);
+        }
     }
 
     public void OnGaze(bool hasGaze)
