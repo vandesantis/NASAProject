@@ -48,23 +48,27 @@ public class NewProjectController : MonoBehaviour
                     Walk();
                     break;
                 case 1:
-                    Screws();
+                    Battery();
                     break;
                 case 2:
-                    Backpanel();
+                    Screws();
                     break;
                 case 3:
-                    RamInsertion();
+                    Backpanel();
                     break;
                 case 4:
+                    RamInsertion();
                     break;
                 case 5:
                     BackpanelRev();
+                    
                     break;
                 case 6:
                     ScrewsRev();
                     break;
                 case 7:
+                    BatteryRev();
+                    
                     break;
             }
             currentTaskNum++;
@@ -86,8 +90,10 @@ public class NewProjectController : MonoBehaviour
                     BackpanelRestart();
                     break;
                 case 4:
+                    RamInsertionRestart();
                     break;
                 case 5:
+                    
                     break;
                 case 6:
                     BackpanelRevRestart();
@@ -152,6 +158,18 @@ public class NewProjectController : MonoBehaviour
     private void RamInsertion()
     {
         anim.Play("Ram_insertion");
+    }
+    private void RamInsertionRestart()
+    {
+        anim.Play("Ram_insertion start");
+    }
+    private void Battery()
+    {
+        anim.Play("BatteryRemove");
+    }
+    private void BatteryRev()
+    {
+        anim.Play("Batteryrev");
     }
    
 }
