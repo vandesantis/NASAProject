@@ -7,7 +7,7 @@ countries.
 ===============================================================================*/
 using System;
 using UnityEngine;
-Using UnityEngine.EventSystems;
+using UnityEngine.EventSystems;
 #if PLATFORM_ANDROID
 using UnityEngine.Android;
 #endif

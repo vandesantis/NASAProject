@@ -1343,6 +1343,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114742283434646526, guid: 7e9b89c21420a47a2bdc92f65dfcc134,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4873404296180574, guid: 7e9b89c21420a47a2bdc92f65dfcc134, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0.58604527
@@ -1502,11 +1507,6 @@ PrefabInstance:
     - target: {fileID: 4783992150405572, guid: 7e9b89c21420a47a2bdc92f65dfcc134, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.27075306
-      objectReference: {fileID: 0}
-    - target: {fileID: 114742283434646526, guid: 7e9b89c21420a47a2bdc92f65dfcc134,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4950797069450082, guid: 7e9b89c21420a47a2bdc92f65dfcc134, type: 3}
       propertyPath: m_LocalRotation.x
@@ -14404,7 +14404,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1414664751}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -16558,6 +16559,8 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 1
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   delegates: []
 --- !u!114 &1142482709
 MonoBehaviour:
@@ -16610,6 +16613,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 0
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &1142482710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16628,6 +16633,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
@@ -18171,7 +18178,6 @@ Transform:
   - {fileID: 51102755}
   - {fileID: 1862296744}
   - {fileID: 1704744707}
-  - {fileID: 1414664751}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -20508,8 +20514,8 @@ Transform:
   m_LocalPosition: {x: 0.866, y: 0.198, z: -0.312}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1262801117}
-  m_RootOrder: 5
+  m_Father: {fileID: 1003242455}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -51.691, z: 0}
 --- !u!114 &1414664752
 MonoBehaviour:
@@ -29821,6 +29827,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 5
@@ -33499,6 +33507,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 6250875055e50a94c91d0853461589bd, type: 2}
+    - target: {fileID: 8374009442065183336, guid: c5bb260e00f4a1043b9787f9d049dc53,
+        type: 3}
+      propertyPath: m_Name
+      value: Battery
+      objectReference: {fileID: 0}
     - target: {fileID: 6504583430678447693, guid: c5bb260e00f4a1043b9787f9d049dc53,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -33548,11 +33561,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8374009442065183336, guid: c5bb260e00f4a1043b9787f9d049dc53,
-        type: 3}
-      propertyPath: m_Name
-      value: Battery
       objectReference: {fileID: 0}
     - target: {fileID: 1923038130392967625, guid: c5bb260e00f4a1043b9787f9d049dc53,
         type: 3}
