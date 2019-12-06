@@ -54,6 +54,7 @@ public class NewProjectController : MonoBehaviour
                     Backpanel();
                     break;
                 case 3:
+                    RamInsertion();
                     break;
                 case 4:
                     break;
@@ -147,6 +148,10 @@ public class NewProjectController : MonoBehaviour
     {
         anim.Play("Screwdriver reverse start");
         //anim.Play("Screwdriver animation");
+    }
+    private void RamInsertion()
+    {
+        anim.Play("Ram_insertion");
     }
    
 }
