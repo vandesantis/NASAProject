@@ -5,7 +5,7 @@ using UnityEngine;
 public class NewProjectController : MonoBehaviour
 {
     private int currentTaskNum;
-    private int numTasks = 7;
+    private int numTasks = 8;
 
     //public Text taskText;
     //private string[] taskStrings;
@@ -84,22 +84,25 @@ public class NewProjectController : MonoBehaviour
                     WalkRestart();
                     break;
                 case 2:
-                    ScrewsRestart();
+                    BatteryRestart();
                     break;
                 case 3:
-                    BackpanelRestart();
+                    ScrewsRestart();
                     break;
                 case 4:
-                    RamInsertionRestart();
+                    BackpanelRestart();
                     break;
                 case 5:
-                    
+                    RamInsertionRestart();
                     break;
                 case 6:
                     BackpanelRevRestart();
                     break;
                 case 7:
                     ScrewsRevRestart();
+                    break;
+                case 8:
+                    BatteryRevStart();
                     break;
             }
             currentTaskNum--;
@@ -161,7 +164,7 @@ public class NewProjectController : MonoBehaviour
     }
     private void RamInsertionRestart()
     {
-        anim.Play("Ram_insertion start");
+        anim.Play("Ram_insertion Start");
     }
     private void Battery()
     {
@@ -170,6 +173,14 @@ public class NewProjectController : MonoBehaviour
     private void BatteryRev()
     {
         anim.Play("Batteryrev");
+    }
+    private void BatteryRestart()
+    {
+        anim.Play("BatteryRemoveStart");
+    }
+    private void BatteryRevStart()
+    {
+        anim.Play("BatteryrevStart");
     }
    
 }
