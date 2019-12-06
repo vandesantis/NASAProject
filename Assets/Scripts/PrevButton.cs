@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NextButton : MonoBehaviour
+public class PrevButton : MonoBehaviour
 {
     public MeshRenderer m_ButtonHighlight;
     public NewProjectController projectController;
 
     //public GameObject Laptop, screwdriver;
 
-    private 
+    private
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +26,7 @@ public class NextButton : MonoBehaviour
         //Laptop.SetActive(true);
         //screwdriver.SetActive(true);
 
-        projectController.NextTask();
+        projectController.PrevTask();
     }
 }
+

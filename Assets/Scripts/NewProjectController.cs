@@ -42,6 +42,17 @@ public class NewProjectController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.T))
         {
+            NextTask();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Y))
+        {
+            PrevTask();
+        }
+    }
+
+    public void NextTask()
+    {
             switch (currentTaskNum)
             {
                 case 0:
@@ -61,21 +72,22 @@ public class NewProjectController : MonoBehaviour
                     break;
                 case 5:
                     BackpanelRev();
-                    
+
                     break;
                 case 6:
                     ScrewsRev();
                     break;
                 case 7:
                     BatteryRev();
-                    
+
                     break;
             }
             currentTaskNum++;
-        }
+    
+    }
 
-        if (Input.GetKeyDown(KeyCode.Y))
-        {
+    public void PrevTask()
+    {
             switch (currentTaskNum)
             {
                 case 0:
@@ -106,7 +118,7 @@ public class NewProjectController : MonoBehaviour
                     break;
             }
             currentTaskNum--;
-        }
+        
     }
 
     private void Backpanel()
